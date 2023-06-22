@@ -102,6 +102,7 @@ while runningMatch :
     checkWin()
     checkTie(board)
     switchPlayer()
-    computer(board)
-    checkWin()
+    if runningMatch:
+        computer(board)
+        checkWin()
     #checkTie(board)
